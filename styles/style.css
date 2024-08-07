@@ -6,6 +6,7 @@
     --color-primario: #F3F5FC;
     --color-secundario: #0A3871;
     --color-terciario: #e3e2e2;
+    --color-extra: #0355e3;
     --color-hover: #272727;
     --fuente-inter: "Inter", sans-serif;
     --fuente-krona: 'Krona One', sans-serif;
@@ -40,3 +41,116 @@
     color: var(--color-hover);
 }
 
+.texto:focus{
+    /*quitar borde al seleccionar */
+
+}
+.texto::placeholder{
+    font-family: var(--fuente-krona);
+    font-style: normal;
+    color: var(--color-secundario);
+}
+.advertencia{
+    display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 8px;
+   position: absolute;
+   width: 80%;
+   left: 12%;
+   top: 80%;
+
+}
+.advertencia p{
+    font-family: var(--fuente-inter);
+    font-size: 14px;
+    color: var(--color-secundario);
+    font-weight: 400;
+    line-height: 150%;
+    opacity: 0.8;
+    order: 1;
+    flex-grow: 0;
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0%;
+    gap: 16px;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 84%;
+}
+.btn-encriptar{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 15%;
+    background-color: var(--color-secundario);
+    font-family: var(--fuente-krona);
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--color-terciario);
+    border-radius: 24px;
+}
+.btn-encriptar:hover{
+    background-color: var(--color-hover);
+}
+.btn-desencriptar{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 15%;
+    background-color: var(--color-secundario);
+    font-family: var(--fuente-krona);
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--color-terciario);
+    border-radius: 24px;
+}
+.btn-desencriptar:hover{
+    background-color: var(--color-hover);
+}
+.btn-copiar{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 15%;
+    background-color: var(--color-secundario);
+    font-family: var(--fuente-krona);
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--color-terciario);
+    border-radius: 24px;
+}
+.btn-copiar:hover{
+    background-color: var(--color-hover);
+}
+.btn-pegar{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 15%;
+    background-color: var(--color-terciario);
+    font-family: var(--fuente-krona);
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--color-hover);
+    border-radius: 24px;
+    border: var(--color-secundario);
+}
+.btn-pegar:hover{
+    background-color: var(--color-extra);
+}
+.btn-pegar:active{
+    background-color: var(--color-hover);
+}
